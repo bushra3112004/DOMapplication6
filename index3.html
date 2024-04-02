@@ -8,21 +8,43 @@
         body{
             background-color: grey;
         }
+        .title{
+            font-size: 20px;
+            text-align: center;
+            color: aliceblue;
+        }
         .container{
-            height: 100px;
-            width: 250px;
+            height: 300px;
+            width: 400px;
             background-color: tomato;
             display: block;
             margin: 50px auto;
             padding: 20px;
         }
-        .input{
-            font-size: 10px;
+        .input-label{
+            font-size: 20px;
+            color:black;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 20px;
         }
+        .input-field{
+            font-size: 20px;
+            text-align: center;
+             margin: 20px 0 20px 40px;
+        }
+        .ages{
+            font-size: 25px;
+            text-align: center;
+        }
+        
         .cal-btn{
             text-align: center;
             display: block;
-            margin: 10px auto;
+            margin: 20px auto;
+            size: 20px;
+            font-size: 15px;
+            padding: 10px 15px;
             
         }
 
@@ -30,16 +52,17 @@
     </style>
 </head>
 <body>
+    <h1 class="title">What is Your AGE?</h1>
     <div class="container">
-    <label for="birthdate" class="input">Enter your Birthdate: </label>
-    <input type="date" class="input" id="birthdate">
+    <label for="birthdate" class="input-label">Enter your Birthdate: </label>
+    <input type="date" class="input-field" id="birthdate">
     <br/>
-    <label for="currentDate" class="input">Enter Current Date:</label>
-    <input type="date" class="input" id="currentDate">
+    <label for="currentDate" class="input-label">Enter Current Date:</label>
+    <input type="date" class="input-field" id="currentDate">
 <br/>
-<div id="result" class="input">you current age:</div>
+<div id="result" class="ages">you current age:</div>
 <br/>
-    <button onclick="calculateAge()" class="input cal-btn">calculate age</button>
+    <button onclick="calculateAge()" class="cal-btn">calculate age</button>
     
     </div>
 </body>
