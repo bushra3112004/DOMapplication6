@@ -18,7 +18,11 @@
     let age=now.getFullYear()-birthdate.getFullYear();
     const monthdiff=now.getMonth()-birthdate.getMonth();
     Document.write(monthdiff)
-    
+    if(monthdiff<0 || (monthdiff==0 && now.getDate()<birthdate.getDate()))
+    {
+        age--;
+    }
+
   }
 
 </script>
