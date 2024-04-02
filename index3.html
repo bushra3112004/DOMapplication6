@@ -9,26 +9,38 @@
             background-color: grey;
         }
         .container{
-            height: 200px;
+            height: 100px;
             width: 250px;
             background-color: tomato;
             display: block;
-            margin: 10px auto;
-            padding: 50px;
+            margin: 50px auto;
+            padding: 20px;
         }
-        
+        .input{
+            font-size: 10px;
+        }
+        .cal-btn{
+            text-align: center;
+            display: block;
+            margin: 10px auto;
+            
+        }
+
 
     </style>
 </head>
 <body>
     <div class="container">
-    <label for="birthdate">enter your birthdate: </label>
+    <label for="birthdate" class="input">Enter your Birthdate: </label>
     <input type="date" class="input" id="birthdate">
-    <label for="currentDate">enter current date:</label>
+    <br/>
+    <label for="currentDate" class="input">Enter Current Date:</label>
     <input type="date" class="input" id="currentDate">
-
-    <button onclick="calculateAge()">calculate age</button>
-    <div id="result">you current age:</div>
+<br/>
+<div id="result" class="input">you current age:</div>
+<br/>
+    <button onclick="calculateAge()" class="input cal-btn">calculate age</button>
+    
     </div>
 </body>
 <script>
