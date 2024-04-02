@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>age finder</title>
     <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            height: 200px;
+            width: 250px;
+            background-color: tomato;
+            display: block;
+            margin: 10px auto;
+            padding: 50px;
+        }
         
+
     </style>
 </head>
 <body>
     <div class="container">
     <label for="birthdate">enter your birthdate: </label>
-    <input type="date" id="birthdate">
+    <input type="date" class="input" id="birthdate">
     <label for="currentDate">enter current date:</label>
-    <input type="date" id="currentDate">
+    <input type="date" class="input" id="currentDate">
 
     <button onclick="calculateAge()">calculate age</button>
     <div id="result">you current age:</div>
